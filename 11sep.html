@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 300px;
+            width: 90%;
+            background-color: red;
+            justify-self: center;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .sbox {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+        }
+ 
+        .image{
+            height: 300px;
+            width: 90%;
+         
+        }
+        @media(width<768px) {
+            .box {
+                width: 90%;
+                background-color: blue;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .sbox {
+                height: 100px;
+                width: 90%;
+                background-color: rgb(19, 238, 19);
+                margin-top: 10px;
+            }
+            
+        .image{
+            height: 300px;
+            width: 100%;
+         
+        }
+        }
+@media(width>768px) and (width<1023px){
+    .box{
+        background-color: yellowgreen;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <h1>media query : </h1>
+
+    <!-- 
+<div class="box">
+<h1>hello world </h1>
+<h1>hello world </h1>
+<h1>hello world </h1>
+<h1>hello world </h1>
+
+</div> -->
+
+
+
+
+    <div class="box">
+        <div class="sbox"></div>
+        <div class="sbox"></div>
+        <div class="sbox"></div>
+        <div class="sbox"></div>
+    </div>
+
+
+<img src="./assets/sea.jpg" class="image" alt="">
+
+</body>
+
+</html>
