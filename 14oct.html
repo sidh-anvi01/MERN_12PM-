@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>dom</h1>
+    
+    <!-- <h1 id="head">hello change this </h1>
+<p id="para"></p>
+
+<button onclick="change()">click</button> -->
+
+
+<p id="para"></p>
+<button onclick="checkResult()">check result</button>
+
+<h1 id="head">hello dom</h1>
+    <script>
+
+name="rohan verma "
+// document.getElementById("head").innerHTML="hello wolrd this is done js"
+// document.getElementById("head").innerText="hello this is js "
+// document.getElementById("para").innerText="hello this is js "
+// document.getElementById("para").innerText=name 
+
+// function change(){
+// document.getElementById("para").innerText=name 
+
+// }
+
+
+ 
+
+function checkResult(){
+   h=34
+   m=56
+   p=4
+   e=32
+   s=5
+   totalMarks=h+m+p+e+s 
+//    console.log(totalMarks)
+
+perc=totalMarks/5 
+console.log(perc)
+
+if(perc>=30){
+    document.getElementById("para").innerHTML="pass"
+}else{
+    document.getElementById("para").innerHTML="fail"
+
+}
+
+
+}
+
+
+
+//  head= document.getElementById("head").innerHTML
+ head= document.getElementById("head")
+console.log(head)
+head.style.color="red"
+head.style.fontSize="50px"
+
+
+
+
+    </script>
+</body>
+</html>
