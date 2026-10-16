@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello DOM </h1>
+    
+
+<h1 class="head">hello</h1>
+<h1 class="head">hello</h1>
+<h1 class="head">hello</h1>
+<h1 class="head">hello</h1>
+
+<li>hello list item</li>
+<li>hello list item</li>
+<li>hello list item</li>
+<li>hello list item</li>
+<li>hello list item</li>
+
+
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+
+<div id="box">
+
+</div>
+
+    <script>
+
+
+// head= document.getElementsByClassName("head")
+// console.log(head)
+// console.log(head[1].innerHTML)
+// console.log(head[3].innerHTML)
+// head[2].innerHTML="by "
+// head[3].style.color="red"
+
+
+
+
+// name="rohan"
+//  item=document.getElementsByTagName("li")
+// console.log(item)
+// console.log(item[2].innerHTML)
+// item[3].innerHTML="hello world"
+// item[2].style.color="blue"
+// item[2].style.fontSize="90px"
+
+// item[3].innerHTML=`<h1 style="color:blue"> hello world this is js ${name}</h1> `
+
+
+
+
+// box=  document.getElementsByTagName("div")
+
+//  box[2].style.height="100px"
+//  box[2].style.width="100px"
+//  box[2].style.backgroundColor="blue"
+
+
+
+
+
+document.getElementById("box")
+
+li=document.createElement("li")
+textNode=document.createTextNode("hello this is list item from js ")
+
+btn=document.createElement("button")
+btnText=document.createTextNode("Open")
+btn.appendChild(btnText)
+
+
+li.appendChild(textNode)
+
+
+box=document.getElementById("box")
+
+box.appendChild(li)
+box.appendChild(btn)
+
+
+    </script>
+</body>
+</html>
