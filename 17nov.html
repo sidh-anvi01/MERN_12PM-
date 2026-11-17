@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>how to access value </h1>
+
+
+
+    <input type="text" name="" id="name">
+    <input type="text" name="" id="num">
+
+ <button onclick="check()">check</button>
+ <button onclick="check2()">check</button>
+
+    <script>
+ 
+
+
+function check(){
+
+     name=   document.getElementById("name").value 
+
+ 
+     if(!name){
+        alert("no name")
+     }else{
+     console.log(name)
+
+     }
+
+
+
+}
+
+
+
+
+function check2(){
+
+        
+    num=document.getElementById("num").value
+     name=   document.getElementById("name").value 
+ 
+ 
+ if(!name || !num){
+    console.log("please fill the input")
+ }
+
+
+    if(num%2==0){
+        console.log("even ")
+    }
+
+    if(num.length<=5){
+        console.log("required length")
+    }
+
+}
+
+
+
+
+    </script>
+
+</body>
+</html>
